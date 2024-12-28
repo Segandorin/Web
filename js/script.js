@@ -96,22 +96,3 @@ function cargarTablaGastos() {
         tabla.search(valorBusqueda).draw();
     });
 }
-
-
-
-
-
-
-
-
-// function adjustHeight() {
-//     const mobileNavHeight = window.innerHeight - document.documentElement.clientHeight;
-//     const offcanvas = document.querySelector('#offcanvas2');
-
-//     if (offcanvas) {
-//         offcanvas.style.height = `${window.innerHeight - mobileNavHeight}px`;
-//     }
-// }
-// window.addEventListener('load', adjustHeight);
-// window.addEventListener('resize', adjustHeight);
-// window.addEventListener('orientationchange', adjustHeight);
