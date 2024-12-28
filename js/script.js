@@ -1,4 +1,4 @@
-const token = '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';
+const token = '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';
 const repoOwner = 'Segandorin';
 const repoName = 'Casa';
 const filePath = 'gastos_data_github.json';
