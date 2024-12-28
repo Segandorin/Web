@@ -26,13 +26,13 @@ async function cargarDatos() {
         const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`, {
             method: 'GET',
             headers: {
-                'Authorization': `token ${token}`,
+                'Authorization': `Bearer ${token}`,  // Asegúrate de usar 'Bearer' para el token
                 'Accept': 'application/vnd.github.v3.raw'  // Solicitar el archivo en formato raw
             }
         });
 
         if (!response.ok) {
-            throw new Error(`Error al acceder al archivo: ${response.statusText}`);
+            throw new Error(`Error al acceder al archivo: ${response.status} ${response.statusText}`);
         }
         const rawData = await response.text();  // Obtener el archivo como texto
         gastosData = JSON.parse(rawData);       // Convertir el texto en un objeto JSON
