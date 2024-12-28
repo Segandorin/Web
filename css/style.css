@@ -1,0 +1,192 @@
+/* #################################################################################################################### */
+/* ######################### P E R S O N A L I Z A C I O N     C O M P O N E N T E S ################################## */
+/* #################################################################################################################### */
+
+/* ================ B O T O N E S =============== */
+body .btn {
+    display: flex;           
+    justify-content: center;
+    align-items: center;     
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1rem; 
+    border-radius: 2rem; 
+    height: 45px;
+    width: 120px;
+}
+
+/* ================= I N P U T S ================ */
+body .form-select:focus {
+    border-color: #333 !important;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4) !important;
+    outline: none;
+}
+
+.form-group .form-control {
+    margin-top: 0px; 
+}
+
+.form-group .form-label {
+    margin-bottom: 0px; 
+}
+
+/* #################################################################################################################### */
+/* ############################################# C O N T A I N E R S ################################################## */
+/* #################################################################################################################### */
+body {           
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.container-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 70px;
+    width: 100%; 
+    border-bottom: 2px solid gray;
+    box-sizing: border-box;
+    z-index: 10;
+    /* background-color: rgb(38, 226, 226); */
+}
+
+.container-tabla { 
+    width: 100%;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.container-flotante {
+    position: fixed; 
+    bottom: 20px; 
+    right: 10px; 
+    z-index: 2; 
+}
+
+/* ########################################### E N C A B E Z A D O #################################################### */
+/* ############################################################################################################## */
+#inputBuscar {
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;            
+    box-shadow: none;        
+    width: 100%;
+    height: 45px;         
+    padding: 8px;              
+    box-sizing: border-box;
+    background-color: transparent;   
+}
+
+#inputBuscar::placeholder {
+    color: lightgray;
+}
+
+#btnResumen {
+    margin-right: 10px;
+}
+
+/* ########################################### C A N V A S 1 ########################################################## */
+/* ############################################################################################################## */
+.container-canvas .offcanvas-body {
+    display: flex;
+    flex-direction: column;  
+    width: 80%;             
+    height: 100vh;          
+    gap: 10px;              
+    margin: 0 auto;       
+}
+
+.container-canvas .form-group {
+    flex: 1;
+}
+
+.container-canvas .offcanvas-body .form-group label {
+    font-size: 20px;
+    color: gray;
+}
+
+.container-canvas .offcanvas-body .form-group input {
+    font-size: 25px;
+    font-weight: bold;
+    border: none;              
+    border-bottom: 1px solid gray;
+    border-radius: 0;  
+    outline: none;            
+    box-shadow: none;          
+    width: 100%;            
+    padding: 8px;              
+    box-sizing: border-box;
+    background-color: transparent;    
+}
+
+.container-canvas .form-group-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;
+    width: 100%;  
+    gap: 10px;           
+}
+
+/* ########################################### C A N V A S 2 ########################################################## */
+/* ############################################################################################################## */
+.container-canvas2 .offcanvas-body {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+
+}
+.container-canvas2 .offcanvas-body .container-resumen-info {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/* ############################################## T A B L A  ########################################################## */
+/* ############################################################################################################## */
+#tablaGastosHtml {
+
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.dataTables_wrapper .dataTable td {
+    font-size: 20px; 
+} 
+
+#tablaGastosHtml thead {
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    z-index: 0; 
+}
+
+#tablaGastosHtml tbody {
+
+}
+
+#tablaGastosHtml td.text-right {
+    text-align: right !important;
+}
+
+/* ############################################## F L O T A N T E ###################################################### */
+/* ############################################################################################################## */
+#btnNuevo {
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
